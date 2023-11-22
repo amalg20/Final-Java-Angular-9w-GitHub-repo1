@@ -36,7 +36,6 @@ export class LoginComponent implements OnInit {
 
         localStorage.setItem("currUsername", data.username);
 
-        //  this.router.navigate(["/"]);
         this.reloadPage();
       },
       error: err => {
@@ -44,7 +43,7 @@ export class LoginComponent implements OnInit {
         console.log(err, err.status);
 
         if (err.status === 403) {
-          // this.externalErrorMsg = "Wrong username/password";
+          
 
          this.reloadPage();
 
@@ -52,6 +51,8 @@ export class LoginComponent implements OnInit {
         }
       });
   }
+
+  
 
 
   reloadPage(): void {
