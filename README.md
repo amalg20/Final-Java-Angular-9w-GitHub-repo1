@@ -19,6 +19,7 @@ Users can view a list of all their recipes, search for specific ones, and open u
 
 ## 3. Use case Diagram:
 
+![use case](https://github.com/amalg20/Final-Java-Angular-9w-GitHub-repo/assets/145042005/166006a4-1cb8-498e-89aa-0434e9af5fd8)
 
 ## 4. Setup:
 
