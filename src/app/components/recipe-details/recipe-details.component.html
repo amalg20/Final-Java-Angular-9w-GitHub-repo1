@@ -1,0 +1,64 @@
+<div *ngIf="viewMode; else editable">
+  <div *ngIf="currentRecipe.id" class="edit">
+    <h4>Recipes</h4>
+    <div>
+      <label><strong>Title:</strong></label> {{ currentRecipe.title }}
+    </div>
+    <div>
+      <label><strong>Description:</strong></label>
+      {{ currentRecipe.instructions }}
+    </div>
+
+
+    <a class="badge badge-primary" routerLink="/recipes/{{ currentRecipe.id }}">
+      Edit
+    </a>
+  </div>
+
+  <div *ngIf="!currentRecipe">
+    <br />
+    <p>Please click on a Recipe...</p>
+  </div>
+</div>
+
+<ng-template #editable>
+  <div *ngIf="currentRecipe.id" class="edit-form" class="container">
+
+
+    <form class="form">
+      <h4>Recipe</h4>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" [(ngModel)]="currentRecipe.title" name="title" />
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea type="text" class="form-control" id="description" [(ngModel)]="currentRecipe.instructions"
+          name="description"></textarea>
+
+      </div>
+
+
+
+      <button class="badge badge-danger mr-2" (click)="deleteRecipe()">
+        Delete
+      </button>
+
+      <button type="submit" class="badge badge-success mb-2" (click)="updateRecipe()">
+        Update
+      </button>
+
+    </form>
+
+
+
+
+    <h5 class="recipe">{{ message }}</h5>
+  </div>
+
+  <div *ngIf="!currentRecipe.id">
+    <br />
+    <p>Cannot access this Recipe...</p>
+  </div>
+</ng-template>

@@ -1,0 +1,17 @@
+<div class="list row">
+
+  <div class="col">
+    <h4>Recipes List</h4>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let recipe of recipes; let i = index" [class.active]="i == currentIndex"
+        (click)="setActiveRecipe(recipe, i)">
+        {{ recipe.title }}
+      </li>
+    </ul>
+
+
+  </div>
+  <div class="col-md-6">
+    <app-recipe-details [viewMode]="true" [currentRecipe]="currentRecipe"></app-recipe-details>
+  </div>
+</div>

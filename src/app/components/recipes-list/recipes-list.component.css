@@ -1,0 +1,27 @@
+.list {
+  text-align: left;
+  max-width: 750px;
+  margin: auto;
+  color: black;
+
+}
+
+button {
+  background-color: darkgreen;
+  color: beige;
+}
+
+h4 {
+  color: beige;
+}
+
+.col {
+
+  padding: 40px 40px;
+  margin-top: 50px;
+
+  width: 1000px;
+  height: 1000px;
+  display: block;
+
+}

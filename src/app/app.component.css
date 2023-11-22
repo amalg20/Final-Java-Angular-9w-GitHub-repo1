@@ -1,0 +1,9 @@
+#app {
+  height: 730px;
+  width: 1525px;
+  color: #fff;
+  background-image: url("../b-imgg.jpg");
+  background-size: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}

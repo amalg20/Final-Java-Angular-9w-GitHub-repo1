@@ -1,0 +1,12 @@
+h5 {
+    text-align: center;
+}
+
+.card {
+    background-color: #f7f7f7;
+    margin: 25px;
+    margin-top: 50px;
+    color: black;
+    max-width: 400px !important;
+    padding: 40px 40px;
+}

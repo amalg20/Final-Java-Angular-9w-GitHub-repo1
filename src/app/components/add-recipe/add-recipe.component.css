@@ -1,0 +1,27 @@
+.submit-form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.card {
+  background-color: #f7f7f7;
+  margin: 25px;
+  margin-top: 50px;
+  max-width: 500px !important;
+  padding: 40px 40px;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+
+}
+
+.form-group {
+  color: black;
+}
+
+h4 {
+  text-align: left;
+  color: beige;
+}
